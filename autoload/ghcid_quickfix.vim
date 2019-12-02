@@ -17,7 +17,7 @@ function! ghcid_quickfix#start(make_new_event_hooks, args) abort
   let ghcid = empty(a:args)
     \ ? 'ghcid'
     \ : 'ghcid ' . a:args
-  call term_open(ghcid, {
+  call termopen(ghcid, {
     \ 'out_io': 'buffer',
     \ 'err_io': 'buffer',
     \ 'out_buf': output_bufnr,
